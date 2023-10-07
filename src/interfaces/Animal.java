@@ -2,7 +2,9 @@ package interfaces;
 
 public class Animal implements Info {
     public int id;
+    public Animal(){
 
+    }
     public Animal(int id){
         this.id = id;
     }
@@ -12,5 +14,9 @@ public class Animal implements Info {
 
     public void showInfo(){
         System.out.println("My ID number: " + this.id);
+    }
+
+    public String toString(){
+        return String.valueOf(id);
     }
 }
